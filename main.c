@@ -35,8 +35,9 @@ void cadastrarContato(Contato *agenda, int *total) {
 //2)listar
 void listarContatos(Contato *agenda, int total) {
     printf("\n--- Lista de Contatos ---\n");
-    for (int i = 0; i < total; i++) {
-        printf("[%d] Nome: %s | Tel: %s | Email: %s\n", i, agenda[i].nome, agenda[i].telefone, agenda[i].email);
+    int i;
+    for (i = 0; i < total; i++) {
+        printf("[%d] Nome: %s | Tel: %s | Email: %s\n", i+1, agenda[i].nome, agenda[i].telefone, agenda[i].email);
     }
 }
 
@@ -45,8 +46,9 @@ void buscarContato(Contato *agenda, int total) {
     char nomeBusca[100];
     printf("\nQual nome deseja buscar? ");
     scanf(" %[^\n]", nomeBusca);
-
-    for (int i = 0; i < total; i++) {
+	
+	int i;
+    for (i = 0; i < total; i++) {
         if (strstr(agenda[i].nome, nomeBusca) != NULL) {
             printf("[%d] Encontrado: %s | Tel: %s\n", i, agenda[i].nome, agenda[i].telefone);
         }
@@ -87,7 +89,8 @@ void removerContato(Contato *agenda, int *total) {
 
     if (indice >= 0 && indice < *total) {
         //arruma a sequência da agenda
-        for (int i = indice; i < *total - 1; i++) {
+        int i;
+        for (i = indice; i < *total - 1; i++) {
             agenda[i] = agenda[i + 1];
         }
         *total = *total - 1; //diminui o total de contatos
