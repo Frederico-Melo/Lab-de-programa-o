@@ -13,7 +13,7 @@ O sistema possui capacidade de armazenamento em memória para até 100 registros
 
 ##  Integrantes e Contribuições
 
-A equipe é formada por 4 acadêmicos, com as seguintes divisões de responsabilidade no desenvolvimento[cite: 69]:
+A equipe é formada por 4 acadêmicos, com as seguintes divisões de responsabilidade no desenvolvimento:
 
 **Frederico:** Responsável pela arquitetura e modularização do código, além da implementação da função recursiva de estatísticas.
 **Ruan:** Desenvolvimento da lógica de dados, funções de Cadastro e Listagem sequencial dos contatos.
@@ -28,9 +28,7 @@ Conforme as boas práticas exigidas, destacamos as seguintes decisões técnicas
 
 ##  Como Compilar e Executar
 
-Este projeto foi escrito em C padrão e pode ser compilado no `gcc`. Siga as instruções abaixo:
-
-### Opção 1: Usando o Dev-C++ (Para Windows)
+### Usando o Dev-C++ (Para Windows)
 1. Crie um novo **Projeto** do tipo *Console Application* (selecionando linguagem C).
 2. Adicione os arquivos `main.c`, `contatos.c` e `contatos.h` ao seu projeto.
 3. Pressione `F11` para compilar e executar.
