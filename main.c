@@ -11,7 +11,6 @@ int main() {
         printf("\n=== MENU ===\n");
         printf("1) Cadastrar\n2) Listar\n3) Buscar\n4) Editar\n5) Excluir\n6) Estatisticas\n7) Sair\n");
         printf("Escolha: ");
-        scanf("%d", &opcao);
 
         if (scanf("%d", &opcao) != 1) {
             
