@@ -13,6 +13,12 @@ int main() {
         printf("Escolha: ");
         scanf("%d", &opcao);
 
+        if (scanf("%d", &opcao) != 1) {
+            
+        fflush(stdin); 
+            
+        opcao = 0;
+
         if (opcao == 1) {
             cadastrarContato(agenda, &totalContatos); 
         } 
