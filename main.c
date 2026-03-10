@@ -18,6 +18,7 @@ int main() {
         fflush(stdin); 
             
         opcao = 0;
+		}
 
         if (opcao == 1) {
             cadastrarContato(agenda, &totalContatos); 
